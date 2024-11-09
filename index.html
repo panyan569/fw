@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Hunt Adventure</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>寻宝游戏</h1>
+<div id="adventureLog"></div>
+<input type="text" id="nicknameInput" placeholder="Enter your nickname" />
+<button id="startButton">开始冒险</button>
+<button id="nextButton" disabled>让我们接着前进吧</button>
+<input type="password" id="treasurePassword" placeholder="Enter password" />
+<button id="unlockTreasureButton" disabled>解锁宝藏</button>
+<!-- 音频控制面板 -->
+<div id="audioControl">
+    <button id="playPauseButton">音乐</button>
+</div>
+
+<div id="library" class="image-step" style="background-image: url('images/图书馆.jpg');"></div>
+<div id="temple" class="image-step" style="background-image: url('images/神庙.jpg');"></div>
+<div id="puzzle" class="image-step" style="background-image: url('images/守卫.jpg');"></div>
+<div id="treasureBox" class="image-step" style="background-image: url('images/07.png');"></div>
+<div id="treasure" class="image-step" style="background-image: url('images/08.png');"></div>
+
+<audio id="backgroundMusic" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="main.js"></script>
+</body>
+</html>
